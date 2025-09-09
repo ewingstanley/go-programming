@@ -1,4 +1,7 @@
-package main
+package solution
+
+import "fmt"
+
 
 // 给你一个 非空 整数数组 nums ，除了某个元素只出现一次以外，其余每个元素均出现两次。
 // 找出那个只出现了一次的元素。
@@ -18,5 +21,15 @@ func singleNumber(nums []int) int {
 	}
 	return -1
 }
+
+
+func Get_single_number() {
+	var numList = []int{1,4,4}
+
+	result := singleNumber(numList)
+	
+	fmt.Println(result)
+}
+
 
 

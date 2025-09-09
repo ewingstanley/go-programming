@@ -2,12 +2,11 @@ package main
 
 import "fmt"
 
-func main() {
-	var numList = []int{1, 4, 4, 1}
+import "01_basicSyntaxPwork/solution"
 
-	result := singleNumber(numList)
-	fmt.Println(result)
-	fmt.Print(1)
-	fmt.Print(2)
-	// testPalindrome()
+func main() {
+	fmt.Println("solution1:")
+	solution.Get_single_number()
+	fmt.Println("solution2:")
+	solution.TestPalindrome()
 }
