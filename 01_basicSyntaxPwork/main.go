@@ -8,6 +8,6 @@ func main() {
 	result := singleNumber(numList)
 	fmt.Println(result)
 	fmt.Print(1)
-
+	fmt.Print(2)
 	// testPalindrome()
 }
