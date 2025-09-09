@@ -23,6 +23,7 @@ func singleNumber(nums []int) int {
 }
 
 
+
 func Get_single_number() {
 	var numList = []int{1,4,4}
 
