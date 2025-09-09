@@ -173,13 +173,13 @@ func receiver(ch <-chan int) {
 	}
 }
 
-func main() {
-	basicChannelExample()
-	bufferedChannelExample()
-	workerExample()
-	selectExample()
-	producerConsumerExample()
-	unidirectionalChannelExample()
+// func main() {
+// 	basicChannelExample()
+// 	bufferedChannelExample()
+// 	workerExample()
+// 	selectExample()
+// 	producerConsumerExample()
+// 	unidirectionalChannelExample()
 	
-	fmt.Println("所有Channel示例执行完毕!")
-}
+// 	fmt.Println("所有Channel示例执行完毕!")
+// }
