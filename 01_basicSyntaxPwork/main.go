@@ -1,8 +1,9 @@
 package main
 
-import "fmt"
-
-import "01_basicSyntaxPwork/solution"
+import (
+	"01_basicSyntaxPwork/solution"
+	"fmt"
+)
 
 func main() {
 	fmt.Println("solution1:")
@@ -20,18 +21,18 @@ func main() {
 	fmt.Println(res2)
 
 	fmt.Println("solution5:")
-	res3 := solution.PlusOne([]int{1,2,3})
+	res3 := solution.PlusOne([]int{1, 2, 3})
 	fmt.Println(res3)
 
 	fmt.Println("solution6:")
-	res4, res5 := solution.RemoveDuplicates([]int{1,1,2,2,3,3,3,4,5})
+	res4, res5 := solution.RemoveDuplicates([]int{1, 1, 2, 2, 3, 3, 3, 4, 5})
 	fmt.Println(res4, res5)
 
 	fmt.Println("solution7:")
-	res6 := solution.MergeInterval([][]int{{1,3},{2,6},{8,10},{15,18}})
+	res6 := solution.MergeInterval([][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}})
 	fmt.Println(res6)
 
 	fmt.Println("Solution8:")
-	res7 := solution.TwoSum([]int{2,7,11,15},9)
+	res7 := solution.TwoSum([]int{2, 7, 11, 15}, 9)
 	fmt.Println(res7)
 }
