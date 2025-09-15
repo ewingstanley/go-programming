@@ -1,6 +1,7 @@
 package main
 
-import "fmt"
+import ("fmt"
+"sync")
 
 func main() {
 	num := 100
@@ -11,6 +12,25 @@ func main() {
 	slicebytwo(&sliceInt)
 	fmt.Println(sliceInt)
 
-	println()
+	var wg sync.WaitGroup
+	ch := make(chan int)
+	wg.Add(2)
+	go routine01(ch,&wg)
+	go routine02(ch,&wg)
+	wg.Wait()
+
+
+	var wg2 sync.WaitGroup
+	ch2 := make(chan int,100)
+	wg2.Add(2)
+	go routine03(ch2,&wg2)
+	go routine04(ch2,&wg2)
+	wg2.Wait()
+
+
+	increment()
+
+	increment02()
+
 
 }
