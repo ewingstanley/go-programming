@@ -33,4 +33,12 @@ func main() {
 	increment02()
 
 
+	var wg3 sync.WaitGroup
+	wg3.Add(2)
+	go goroutine05(&wg3)
+	go goroutine06(&wg3)
+	wg3.Wait()
+
+	durations()
+
 }
