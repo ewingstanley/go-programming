@@ -1,3 +1,11 @@
+# Augment 相关文件
 .augment
 
-.vscode
+# IDE 和编辑器文件
+.vscode/
+
+.gitignore
+
+
+
+coroutine_communication/
